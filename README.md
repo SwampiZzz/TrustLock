@@ -120,11 +120,9 @@ Goals include:
 
 Possible roles include:
 
-* Smart Contract Lead
-* Testing Lead
-* Blockchain Integration Lead
-* Frontend Lead
-* Documentation & Presentation Lead
+* Smart Contract & Testing Lead
+* Blockchain & Integration Lead
+* Frontend & Demo Lead
 
 Regardless of assigned responsibilities, every team member should understand the contract logic and overall application architecture.
 
