@@ -101,35 +101,6 @@ Goals include:
 
 ---
 
-# Planned Repository Structure
-
-```text
-.
-├── contracts/
-│   ├── *.cash
-│   ├── artifacts/
-│   └── test/
-│
-├── scripts/
-│   ├── deploy/
-│   ├── actions/
-│   └── regtest/
-│
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   ├── services/
-│   └── utils/
-│
-├── docs/
-├── public/
-├── package.json
-└── README.md
-```
-
----
-
 # Development Workflow
 
 1. Analyze the problem statement.
