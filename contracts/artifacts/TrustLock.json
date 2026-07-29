@@ -25,35 +25,36 @@
       ]
     }
   ],
-  "bytecode": "OP_3 OP_PICK OP_0 OP_NUMEQUAL OP_IF OP_SWAP OP_5 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_OVER OP_7 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_3 OP_ROLL OP_4 OP_ROLL OP_CHECKSIGVERIFY OP_3 OP_ROLL OP_4 OP_ROLL OP_CHECKSIGVERIFY e803 OP_INPUTINDEX OP_UTXOVALUE OP_ADD OP_0 OP_OUTPUTVALUE OP_NUMEQUALVERIFY 76a914 OP_ROT OP_CAT 88ac OP_CAT OP_0 OP_OUTPUTBYTECODE OP_EQUAL OP_NIP OP_NIP OP_ELSE OP_3 OP_ROLL OP_1 OP_NUMEQUALVERIFY OP_4 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_OVER OP_6 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_2SWAP OP_SWAP OP_CHECKSIGVERIFY OP_2SWAP OP_SWAP OP_CHECKSIGVERIFY e803 OP_INPUTINDEX OP_UTXOVALUE OP_ADD OP_0 OP_OUTPUTVALUE OP_NUMEQUALVERIFY 76a914 OP_ROT OP_CAT 88ac OP_CAT OP_0 OP_OUTPUTBYTECODE OP_EQUAL OP_NIP OP_ENDIF",
-  "source": "pragma cashscript ^0.13.0;\r\n\r\ncontract TrustLock(\r\n    bytes20 arbiterPKH,\r\n    bytes20 buyerPKH,\r\n    bytes20 sellerPKH\r\n\r\n){\r\n    function releaseToSeller(sig buyerSig, pubkey buyerPk, sig sellerSig, pubkey sellerPk){\r\n\r\n        require(buyerPKH == hash160(buyerPk));\r\n        require(sellerPKH == hash160(sellerPk));\r\n        require(checkSig(buyerSig,buyerPk));\r\n        require(checkSig(sellerSig,sellerPk));\r\n        \r\n        int minerFee = 1000;\r\n        int amount = tx.inputs[this.activeInputIndex].value + minerFee;\r\n        \r\n        require(tx.outputs[0].value == amount);\r\n        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);\r\n\r\n        require(tx.outputs[0].lockingBytecode == sellerLock);\r\n    }\r\n\r\n    function arbiterReleaseToSeller(sig arbiterSig, pubkey arbiterPk, sig sellerSig, pubkey sellerPk){\r\n\r\n        require(arbiterPKH == hash160(arbiterPk));\r\n        require(sellerPKH == hash160(sellerPk));\r\n        require(checkSig(arbiterSig, arbiterPk));\r\n        require(checkSig(sellerSig, sellerPk));\r\n\r\n        int minerFee = 1000;\r\n        int amount = tx.inputs[this.activeInputIndex].value + minerFee;\r\n        \r\n        require(tx.outputs[0].value == amount);\r\n        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);\r\n\r\n        require(tx.outputs[0].lockingBytecode == sellerLock);\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-  "fingerprint": "313db7ade89332a35086165a55c6c7f3909f2c8b0595a9a97e8c758bc3d1f3f7",
+  "bytecode": "OP_3 OP_PICK OP_0 OP_NUMEQUAL OP_IF OP_SWAP OP_5 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_OVER OP_7 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_3 OP_ROLL OP_4 OP_ROLL OP_CHECKSIGVERIFY OP_3 OP_ROLL OP_4 OP_ROLL OP_CHECKSIGVERIFY e803 OP_INPUTINDEX OP_UTXOVALUE OP_SWAP OP_SUB OP_0 OP_OUTPUTVALUE OP_NUMEQUALVERIFY 76a914 OP_ROT OP_CAT 88ac OP_CAT OP_0 OP_OUTPUTBYTECODE OP_EQUAL OP_NIP OP_NIP OP_ELSE OP_3 OP_ROLL OP_1 OP_NUMEQUALVERIFY OP_4 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_OVER OP_6 OP_PICK OP_HASH160 OP_EQUALVERIFY OP_2SWAP OP_SWAP OP_CHECKSIGVERIFY OP_2SWAP OP_SWAP OP_CHECKSIGVERIFY e803 OP_INPUTINDEX OP_UTXOVALUE OP_SWAP OP_SUB OP_0 OP_OUTPUTVALUE OP_NUMEQUALVERIFY 76a914 OP_ROT OP_CAT 88ac OP_CAT OP_0 OP_OUTPUTBYTECODE OP_EQUAL OP_NIP OP_ENDIF",
+  "source": "pragma cashscript ^0.13.0;\r\n\r\ncontract TrustLock(\r\n    bytes20 arbiterPKH,\r\n    bytes20 buyerPKH,\r\n    bytes20 sellerPKH\r\n\r\n){\r\n    function releaseToSeller(sig buyerSig, pubkey buyerPk, sig sellerSig, pubkey sellerPk){\r\n\r\n        require(buyerPKH == hash160(buyerPk));\r\n        require(sellerPKH == hash160(sellerPk));\r\n        require(checkSig(buyerSig,buyerPk));\r\n        require(checkSig(sellerSig,sellerPk));\r\n        \r\n        int minerFee = 1000;\r\n        int amount = tx.inputs[this.activeInputIndex].value - minerFee;\r\n        \r\n        require(tx.outputs[0].value == amount);\r\n        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);\r\n\r\n        require(tx.outputs[0].lockingBytecode == sellerLock);\r\n    }\r\n\r\n    function arbiterReleaseToSeller(sig arbiterSig, pubkey arbiterPk, sig sellerSig, pubkey sellerPk){\r\n\r\n        require(arbiterPKH == hash160(arbiterPk));\r\n        require(sellerPKH == hash160(sellerPk));\r\n        require(checkSig(arbiterSig, arbiterPk));\r\n        require(checkSig(sellerSig, sellerPk));\r\n\r\n        int minerFee = 1000;\r\n        int amount = tx.inputs[this.activeInputIndex].value - minerFee;\r\n        \r\n        require(tx.outputs[0].value == amount);\r\n        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);\r\n\r\n        require(tx.outputs[0].lockingBytecode == sellerLock);\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+  "fingerprint": "950d8ad3e38ee700a0ad13c027b7d6792176e631fbff423ef37d1e4784739a4c",
   "debug": {
-    "bytecode": "5379009c637c5579a988785779a988537a547aad537a547aad02e803c0c69300cc9d0376a9147b7e0288ac7e00cd87777767537a519d5479a988785679a988727cad727cad02e803c0c69300cc9d0376a9147b7e0288ac7e00cd877768",
-    "sourceMap": "9:4:23:5;;;;;11:16:11:24;:36::43;;:28::44:1;:8::46;12:16:12:25:0;:37::45;;:29::46:1;:8::48;13:25:13:33:0;;:34::41;;:8::44:1;14:25:14:34:0;;:35::43;;:8::46:1;16:23:16:27:0;17:31:17:52;:21::59:1;:::70;19:27:19:28:0;:16::35:1;:8::47;20:29:20:64:0;:54::63;:29::64:1;;;22:27:22:28:0;:16::45:1;:8::61;9:90:23:5;;:4;25::40::0;;;;27:38:27:47;;:30::48:1;:8::50;28:16:28:25:0;:37::45;;:29::46:1;:8::48;29:25:29:46:0;;:8::49:1;30:25:30:44:0;;:8::47:1;32:23:32:27:0;33:31:33:52;:21::59:1;:::70;35:27:35:28:0;:16::35:1;:8::47;36:29:36:64:0;:54::63;:29::64:1;;;38:27:38:28:0;:16::45:1;:8::61;25:101:40:5;3:0:44:1",
+    "bytecode": "5379009c637c5579a988785779a988537a547aad537a547aad02e803c0c67c9400cc9d0376a9147b7e0288ac7e00cd87777767537a519d5479a988785679a988727cad727cad02e803c0c67c9400cc9d0376a9147b7e0288ac7e00cd877768",
+    "sourceMap": "9:4:23:5;;;;;11:16:11:24;:36::43;;:28::44:1;:8::46;12:16:12:25:0;:37::45;;:29::46:1;:8::48;13:25:13:33:0;;:34::41;;:8::44:1;14:25:14:34:0;;:35::43;;:8::46:1;16:23:16:27:0;17:31:17:52;:21::59:1;:62::70:0;:21:::1;19:27:19:28:0;:16::35:1;:8::47;20:29:20:64:0;:54::63;:29::64:1;;;22:27:22:28:0;:16::45:1;:8::61;9:90:23:5;;:4;25::40::0;;;;27:38:27:47;;:30::48:1;:8::50;28:16:28:25:0;:37::45;;:29::46:1;:8::48;29:25:29:46:0;;:8::49:1;30:25:30:44:0;;:8::47:1;32:23:32:27:0;33:31:33:52;:21::59:1;:62::70:0;:21:::1;35:27:35:28:0;:16::35:1;:8::47;36:29:36:64:0;:54::63;:29::64:1;;;38:27:38:28:0;:16::45:1;:8::61;25:101:40:5;3:0:44:1",
     "logs": [],
     "requires": [
       { "ip": 12, "line": 11 },
       { "ip": 17, "line": 12 },
       { "ip": 22, "line": 13 },
       { "ip": 27, "line": 14 },
-      { "ip": 34, "line": 19 },
-      { "ip": 43, "line": 22 },
-      { "ip": 53, "line": 27 },
-      { "ip": 58, "line": 28 },
-      { "ip": 61, "line": 29 },
-      { "ip": 64, "line": 30 },
-      { "ip": 71, "line": 35 },
-      { "ip": 80, "line": 38 }
-    ]
+      { "ip": 35, "line": 19 },
+      { "ip": 44, "line": 22 },
+      { "ip": 54, "line": 27 },
+      { "ip": 59, "line": 28 },
+      { "ip": 62, "line": 29 },
+      { "ip": 65, "line": 30 },
+      { "ip": 73, "line": 35 },
+      { "ip": 82, "line": 38 }
+    ],
+    "sourceTags": "41:42:sc;79:79:sc"
   },
   "compiler": {
     "name": "cashc",
-    "version": "0.13.0",
+    "version": "0.13.2",
     "options": {
       "enforceFunctionParameterTypes": true,
       "enforceLocktimeGuard": true
     }
   },
-  "updatedAt": "2026-07-29T05:23:44.352Z"
+  "updatedAt": "2026-07-29T07:42:16.043Z"
 }
