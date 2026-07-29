@@ -14,6 +14,7 @@ import {
   sellerSigTemp,
   arbiterSigTemp,
   MINER_FEE,
+  DUST_LIMIT,
 } from './helpers.js';
 
 function pkhToAddress(pkh, contractAddress) {
@@ -172,5 +173,49 @@ describe('TrustLock.arbiterReleaseToSeller', () => {
         .addOutput({ to: sellerAddress, amount: wrongAmount })
         .send()
     );
+  });
+});
+
+describe('TrustLock.dustEdgeCase', () => {
+  it('fails when deposit is too small to leave a non-dust output after minerFee', async () => {
+    const smallDeposit = 1500n;
+    const { provider, contract, contractUTXO } = setupTrustLock({ totalDeposit: smallDeposit });
+    const sellerAddress = pkhToAddress(sellerPKH, contract.address);
+    const dustAmount = smallDeposit - MINER_FEE; // 500n
+
+    await assert.rejects(async () => {
+      await new TransactionBuilder({ provider })
+        .addInput(contractUTXO, contract.unlock.releaseToSeller(buyerSigTemp, buyerPK, sellerSigTemp, sellerPK))
+        .addOutput({ to: sellerAddress, amount: dustAmount })
+        .send();
+    });
+  });
+
+  it('succeeds right at the dust boundary (output == 546n)', async () => {
+    const boundaryDeposit = DUST_LIMIT + MINER_FEE; // 1546n
+    const { provider, contract, contractUTXO } = setupTrustLock({ totalDeposit: boundaryDeposit });
+    const sellerAddress = pkhToAddress(sellerPKH, contract.address);
+    const expectedAmount = boundaryDeposit - MINER_FEE; // 546n
+
+    const tx = await new TransactionBuilder({ provider })
+      .addInput(contractUTXO, contract.unlock.releaseToSeller(buyerSigTemp, buyerPK, sellerSigTemp, sellerPK))
+      .addOutput({ to: sellerAddress, amount: expectedAmount })
+      .send();
+
+    assert.ok(tx.txid);
+  });
+
+  it('checks behavior one satoshi below the assumed dust boundary (output == 545n)', async () => {
+    const belowBoundaryDeposit = DUST_LIMIT + MINER_FEE - 1n; // 1545n
+    const { provider, contract, contractUTXO } = setupTrustLock({ totalDeposit: belowBoundaryDeposit });
+    const sellerAddress = pkhToAddress(sellerPKH, contract.address);
+    const dustAmount = belowBoundaryDeposit - MINER_FEE; // 545n
+
+    await assert.rejects(async () => {
+      await new TransactionBuilder({ provider })
+        .addInput(contractUTXO, contract.unlock.releaseToSeller(buyerSigTemp, buyerPK, sellerSigTemp, sellerPK))
+        .addOutput({ to: sellerAddress, amount: dustAmount })
+        .send();
+    });
   });
 });
