@@ -1,0 +1,44 @@
+pragma cashscript ^0.13.0;
+
+contract TrustLock(
+    bytes20 arbiterPKH,
+    bytes20 buyerPKH,
+    bytes20 sellerPKH
+
+){
+    function releaseToSeller(sig buyerSig, pubkey buyerPk, sig sellerSig, pubkey sellerPk){
+
+        require(buyerPKH == hash160(buyerPk));
+        require(sellerPKH == hash160(sellerPk));
+        require(checkSig(buyerSig,buyerPk));
+        require(checkSig(sellerSig,sellerPk));
+        
+        int minerFee = 1000;
+        int amount = tx.inputs[this.activeInputIndex].value + minerFee;
+        
+        require(tx.outputs[0].value == amount);
+        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);
+
+        require(tx.outputs[0].lockingBytecode == sellerLock);
+    }
+
+    function arbiterReleaseToSeller(sig arbiterSig, pubkey arbiterPk, sig sellerSig, pubkey sellerPk){
+
+        require(arbiterPKH == hash160(arbiterPk));
+        require(sellerPKH == hash160(sellerPk));
+        require(checkSig(arbiterSig, arbiterPk));
+        require(checkSig(sellerSig, sellerPk));
+
+        int minerFee = 1000;
+        int amount = tx.inputs[this.activeInputIndex].value + minerFee;
+        
+        require(tx.outputs[0].value == amount);
+        bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);
+
+        require(tx.outputs[0].lockingBytecode == sellerLock);
+
+    }
+
+
+
+}
