@@ -27,8 +27,6 @@ Our practice focuses on developing the following skills:
 
 # Practice Schedule
 
----
-
 ## Part 1 — Trimmed Build
 
 **July 29**
