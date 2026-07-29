@@ -27,11 +27,13 @@ Our practice focuses on developing the following skills:
 
 # Practice Schedule
 
+---
+
 ## Part 1 — Trimmed Build
 
-**July 28**
+**July 29**
 
-**Time:** 10:00 PM (or 11:00 PM) – 12:00 AM
+**Time:** 9:00 AM – 10:00 AM
 
 Focus:
 
@@ -116,13 +118,9 @@ Goals include:
 
 # Team Roles
 
-> **To be assigned**
-
-Possible roles include:
-
-* Smart Contract & Testing Lead
-* Blockchain & Integration Lead
-* Frontend & Demo Lead
+* Smart Contract & Testing Lead - Deoo0
+* Blockchain & Integration Lead - CodeWithPhyl
+* Frontend & Demo Lead - SwampiZzz
 
 Regardless of assigned responsibilities, every team member should understand the contract logic and overall application architecture.
 
