@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "cashc": "^0.13.2",
     "cashscript": "^0.13.2"
@@ -6,9 +7,12 @@
   "scripts": {
     "compile": "cashc contracts/TrustLock.cash -o contracts/artifacts/TrustLock.json",
     "test": "npm run compile && node --test contracts/test/trustlock.test.js",
-    "deploy": "node scripts/deploy-stream.js",
-    "withdraw": "node scripts/withdraw.js",
-    "cancel": "node scripts/cancel.js",
+    "regtest:start": "bash scripts/start-regtest-node.sh",
+    "regtest:stop": "bash scripts/stop-regtest-node.sh",
+    "regtest:reset": "bash scripts/reset-regtest-data.sh",
+    "regtest:deploy": "node scripts/deploy-trustlock.js",
+    "regtest:release": "node scripts/release-to-seller.js",
+    "regtest:arbiter-release": "node scripts/arbiter-release-to-seller.js",
     "regtest:mine": "node scripts/mine-regtest-blocks.js"
   }
 }
