@@ -1,12 +1,14 @@
 {
-  "name": "trustlock",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
   "dependencies": {
+    "cashc": "^0.13.2",
     "cashscript": "^0.13.2"
   },
-  "devDependencies": {
-    "cashc": "^0.13.2"
+  "scripts": {
+    "compile": "cashc contracts/TrustLock.cash -o contracts/artifacts/TrustLock.json",
+    "test": "npm run compile && node --test contracts/test/trustlock.test.js",
+    "deploy": "node scripts/deploy-stream.js",
+    "withdraw": "node scripts/withdraw.js",
+    "cancel": "node scripts/cancel.js",
+    "regtest:mine": "node scripts/mine-regtest-blocks.js"
   }
 }

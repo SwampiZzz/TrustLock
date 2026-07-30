@@ -14,7 +14,7 @@ contract TrustLock(
         require(checkSig(sellerSig,sellerPk));
         
         int minerFee = 1000;
-        int amount = tx.inputs[this.activeInputIndex].value + minerFee;
+        int amount = tx.inputs[this.activeInputIndex].value - minerFee;
         
         require(tx.outputs[0].value == amount);
         bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);
@@ -30,7 +30,7 @@ contract TrustLock(
         require(checkSig(sellerSig, sellerPk));
 
         int minerFee = 1000;
-        int amount = tx.inputs[this.activeInputIndex].value + minerFee;
+        int amount = tx.inputs[this.activeInputIndex].value - minerFee;
         
         require(tx.outputs[0].value == amount);
         bytes25 sellerLock = new LockingBytecodeP2PKH(sellerPKH);
