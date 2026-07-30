@@ -25,6 +25,33 @@ Our practice focuses on developing the following skills:
 
 ---
 
+# Project File Structure
+
+trustlock/
+├── README.md
+├── package.json
+├── .env.example
+├── contracts/
+│ ├── Escrow.cash
+│ ├── artifacts/Escrow.json
+│ └── test/
+│ ├── helpers.js
+│ └── escrow.test.js
+├── scripts/
+│ ├── lib/
+│ │ ├── config.js
+│ │ ├── RegtestRpcProvider.js
+│ │ └── actions.js
+│ ├── deploy-escrow.js
+│ ├── release.js
+│ ├── arbiter-resolve.js
+│ ├── mine-regtest-blocks.js
+│ ├── start-regtest-node.sh
+│ └── stop-regtest-node.sh
+├── docs/
+│ └── regtest-node-setup.md
+---
+
 # Practice Schedule
 
 ## Part 1 — Trimmed Build
