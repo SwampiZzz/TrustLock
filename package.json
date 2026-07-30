@@ -1,0 +1,12 @@
+{
+  "name": "trustlock",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "cashscript": "^0.13.2"
+  },
+  "devDependencies": {
+    "cashc": "^0.13.2"
+  }
+}
