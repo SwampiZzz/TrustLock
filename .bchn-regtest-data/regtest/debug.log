@@ -1,0 +1,422 @@
+2026-07-31T17:00:04Z 
+
+
+
+
+2026-07-31T17:00:04Z Bitcoin Cash Node version v29.0.0-89a591f7c (release build)
+2026-07-31T17:00:04Z Checkpoints will be verified.
+2026-07-31T17:00:04Z New block headers below finalized block (maxreorgdepth=10) will be rejected.
+2026-07-31T17:00:04Z Nodes sending headers below finalized block will be penalized with DoS score 100.
+2026-07-31T17:00:04Z Validating signatures for all blocks.
+2026-07-31T17:00:04Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2026-07-31T17:00:04Z Using the 'shani(1way,2way)' SHA256 implementation
+2026-07-31T17:00:04Z Using RdSeed as additional entropy source
+2026-07-31T17:00:04Z Using RdRand as an additional entropy source
+2026-07-31T17:00:04Z Default data directory /home/lacophyl/.bitcoin
+2026-07-31T17:00:04Z Using data directory /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest
+2026-07-31T17:00:04Z Config file: /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/bitcoin.conf (not found, skipping)
+2026-07-31T17:00:04Z Using at most 125 automatic connections (10240 file descriptors available)
+2026-07-31T17:00:04Z Using 32 MiB out of 32 requested for signature cache, able to store 1048576 elements
+2026-07-31T17:00:04Z Using 32 MiB out of 32 requested for script execution cache, able to store 1048576 elements
+2026-07-31T17:00:04Z Script verification uses 15 additional threads
+2026-07-31T17:00:04Z scheduler thread start
+2026-07-31T17:00:04Z HTTP: creating work queue of depth 16
+2026-07-31T17:00:04Z Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcauth for rpcauth auth generation.
+2026-07-31T17:00:04Z HTTP: starting 4 worker threads
+2026-07-31T17:00:04Z Using wallet directory /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/wallets
+2026-07-31T17:00:04Z init message: Verifying wallet...
+2026-07-31T17:00:04Z Using BerkeleyDB version Berkeley DB 5.3.28: (September  9, 2013)
+2026-07-31T17:00:04Z Using wallet wallet.dat
+2026-07-31T17:00:04Z BerkeleyEnvironment::Open: LogDir=/mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/wallets/database ErrorFile=/mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/wallets/db.log
+2026-07-31T17:00:04Z init message: Loading banlist...
+2026-07-31T17:00:04Z ERROR: DeserializeFileDB: Failed to open file /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/banlist.dat
+2026-07-31T17:00:04Z Invalid or missing banlist.dat; recreating
+2026-07-31T17:00:04Z Using /16 prefix for IP bucketing
+2026-07-31T17:00:04Z Cache configuration:
+2026-07-31T17:00:04Z * Using 2.0MiB for block index database
+2026-07-31T17:00:04Z * Using 56.0MiB for transaction index database
+2026-07-31T17:00:04Z * Using 8.0MiB for chain state database
+2026-07-31T17:00:04Z * Using 384.0MiB for in-memory UTXO set (plus up to 305.2MiB of unused mempool space)
+2026-07-31T17:00:04Z init message: Loading block index...
+2026-07-31T17:00:04Z Opening LevelDB in /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/blocks/index
+2026-07-31T17:00:04Z Opened LevelDB successfully
+2026-07-31T17:00:04Z Using obfuscation key for /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/blocks/index: 0000000000000000
+2026-07-31T17:00:04Z LoadBlockIndexDB: last block file = 0
+2026-07-31T17:00:04Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01T00:00:00Z...1970-01-01T00:00:00Z)
+2026-07-31T17:00:04Z Checking all blk files are present...
+2026-07-31T17:00:04Z Initializing databases...
+2026-07-31T17:00:04Z Pre-allocating up to position 0x1000000 in blk00000.dat
+2026-07-31T17:00:08Z Opening LevelDB in /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/chainstate
+2026-07-31T17:00:08Z Opened LevelDB successfully
+2026-07-31T17:00:08Z Wrote new obfuscate key for /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/chainstate: ca334911be3268db
+2026-07-31T17:00:08Z Using obfuscation key for /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/chainstate: ca334911be3268db
+2026-07-31T17:00:08Z  block index            4064ms
+2026-07-31T17:00:08Z Opening LevelDB in /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/indexes/txindex
+2026-07-31T17:00:08Z Opened LevelDB successfully
+2026-07-31T17:00:08Z Using obfuscation key for /mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/indexes/txindex: 0000000000000000
+2026-07-31T17:00:08Z txindex thread start
+2026-07-31T17:00:08Z txindex is enabled
+2026-07-31T17:00:08Z txindex thread exit
+2026-07-31T17:00:08Z init message: Loading wallet...
+2026-07-31T17:00:08Z BerkeleyEnvironment::Open: LogDir=/mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/wallets/database ErrorFile=/mnt/c/Users/acost/Documents/TrustLock/.bchn-regtest-data/regtest/wallets/db.log
+2026-07-31T17:00:09Z [default wallet] nFileVersion = 29000000
+2026-07-31T17:00:09Z [default wallet] Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total. Unknown wallet records: 0
+2026-07-31T17:00:09Z [default wallet] Performing wallet upgrade to 200300
+2026-07-31T17:00:18Z [default wallet] keypool added 2000 keys (1000 internal), size=2000 (1000 internal)
+2026-07-31T17:00:20Z [default wallet] Wallet completed loading in           11883ms
+2026-07-31T17:00:20Z [default wallet] setKeyPool.size() = 2000
+2026-07-31T17:00:20Z [default wallet] mapWallet.size() = 0
+2026-07-31T17:00:20Z [default wallet] mapAddressBook.size() = 0
+2026-07-31T17:00:20Z UpdateTip: new best=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 version=0x00000001 log2_work=1 tx=1 date='2011-02-02T23:16:42Z' progress=1.000000 cache=0.0MiB(0txo)
+2026-07-31T17:00:20Z mapBlockIndex.size() = 1
+2026-07-31T17:00:20Z nBestHeight = 0
+2026-07-31T17:00:20Z Bound to [::]:18444
+2026-07-31T17:00:20Z Imported dsproofs from disk: 0 succeeded, 0 failed, 0 already there, 3.850 msec elapsed
+2026-07-31T17:00:20Z Bound to 0.0.0.0:18444
+2026-07-31T17:00:20Z Bound to 127.0.0.1:18445
+2026-07-31T17:00:20Z torcontrol thread start
+2026-07-31T17:00:20Z init message: Loading P2P addresses...
+2026-07-31T17:00:20Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 3.583 msec elapsed
+2026-07-31T17:00:20Z Loaded 0 addresses from peers.dat  10ms
+2026-07-31T17:00:20Z init message: Starting network threads...
+2026-07-31T17:00:20Z net thread start
+2026-07-31T17:00:20Z dnsseed thread start
+2026-07-31T17:00:20Z Loading addresses from DNS seeds (could take a while)
+2026-07-31T17:00:20Z 0 addresses found from DNS seeds
+2026-07-31T17:00:20Z dnsseed thread exit
+2026-07-31T17:00:20Z addcon thread start
+2026-07-31T17:00:20Z init message: Done loading
+2026-07-31T17:00:20Z opencon thread start
+2026-07-31T17:00:20Z msghand thread start
+2026-07-31T17:00:21Z [default wallet] keypool reserve 1
+2026-07-31T17:00:21Z [default wallet] keypool keep 1
+2026-07-31T17:00:21Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:21Z Pre-allocating up to position 0x100000 in rev00000.dat
+2026-07-31T17:00:22Z UpdateTip: new best=6e723c48024acb256b3413f3ec11c0ef267241da6195fb41c0f5c308a131e0ca height=1 version=0x20000000 log2_work=2 tx=2 date='2026-07-31T17:00:21Z' progress=1.000000 cache=0.0MiB(1txo)
+2026-07-31T17:00:22Z Leaving InitialBlockDownload (latching to false)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=1fcbb8b5e7af6d3abb212ab401f7042f432ea2a86200970d25d74e0aabb66dd7 height=2 version=0x20000000 log2_work=2.5849625 tx=3 date='2026-07-31T17:00:22Z' progress=1.000000 cache=0.0MiB(2txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=4714540cdb977f20b633ad34abc3afedc8b03a1f12b642e60ceedea5e1a630f6 height=3 version=0x20000000 log2_work=3 tx=4 date='2026-07-31T17:00:22Z' progress=1.000000 cache=0.0MiB(3txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=6b672e93e77ed21898551191430e3bdfea41289ff563a0b398a42b199b22addd height=4 version=0x20000000 log2_work=3.3219281 tx=5 date='2026-07-31T17:00:23Z' progress=1.000000 cache=0.0MiB(4txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=59c8a183cced3dec4422b7bc68e42eed38ad1613cbe4bb5cee26cb196c15ea3c height=5 version=0x20000000 log2_work=3.5849625 tx=6 date='2026-07-31T17:00:23Z' progress=1.000000 cache=0.0MiB(5txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=5462de030191b4a80cd545820e9013dd855207959e8acd6859ce1222db4c41e8 height=6 version=0x20000000 log2_work=3.8073549 tx=7 date='2026-07-31T17:00:23Z' progress=1.000000 cache=0.0MiB(6txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z [default wallet] AddToWallet a01210c66b7907b88165e5e8a329fe37eb9fa9eb74cf297381b607b5a3badb5e  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet f43fd86c4741965c874d73884a2a8263e93544036b1294b2e28ebf7d5aa7245c  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 2871656a12be4478e3fe343ac68b7ead67c3347afc03099ec917f2cc9968c586  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet b45b3f59c0d443f3cd255cea823cade6fc6b78c7e9b6a4fb46351bf2851ebd4c  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet df59a32ec26c8271c770a0a09b092511fc9786b664f0e3390a8eb82cce519fb5  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 1cd4a154d464b093e4d81669d0681ef4085d26b54f5a98c6d952b4777cd5d482  new
+2026-07-31T17:00:22Z UpdateTip: new best=2b7f3e95b5cd72a9cf1f9a8c041d120eb55a9f829e62e2f0693e6c5e1519d7fb height=7 version=0x20000000 log2_work=4 tx=8 date='2026-07-31T17:00:23Z' progress=1.000000 cache=0.0MiB(7txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=1756f37ff24d1b6969a37e68239a6f9f94b1b3457d1244c191c39eafceda4f45 height=8 version=0x20000000 log2_work=4.169925 tx=9 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(8txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=032f86b73576e5bee9b0c7d64c540eb5e431959065f9190756217d7d4df11975 height=9 version=0x20000000 log2_work=4.3219281 tx=10 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(9txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=5baf3b100cd741ece18ca36f7ebc5310bf9d91e44decc526c2e8010910c3b546 height=10 version=0x20000000 log2_work=4.4594316 tx=11 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(10txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=4c1c624408111f9885914fba5c9e150fdf7bddaa53d0d0b36679bb6d91092e5c height=11 version=0x20000000 log2_work=4.5849625 tx=12 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(11txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=2f87a0a889c116bc80fa617b9facca85cfae76a36974b365607e0744b6a9e63e height=12 version=0x20000000 log2_work=4.7004397 tx=13 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(12txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z [default wallet] AddToWallet 10ffc0a8947b8532f4d9a47d8a5fdc465945841e70f13435113e106c24d655cb  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 4754195496b8f8993b3bf3f98669358bb653c82665cac0287df1af3c9a6ebcee  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 7412083a8b5993d2f05e3e6ec3f55a8da195d7adcc3fdbf3715c6899dd51d95c  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 827f98db8b5be17907670bef830036825a9164c3eb66f1dd245bedb6d0322a3f  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 2cafe7369d97898c1d24f3b15cfcbfffab7a501f3a8a875550c8c91035da82df  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 8f640952aea82fe4f23ac3097d06c173c4c7aa7f2585f5628206a024555efbd5  new
+2026-07-31T17:00:22Z UpdateTip: new best=6fe636bcb4e5ea6fd10c2b311ed6c9581d525a4ddcb575ba8f18d0cd9452065f height=13 version=0x20000000 log2_work=4.8073549 tx=14 date='2026-07-31T17:00:24Z' progress=1.000000 cache=0.0MiB(13txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=6f108bd3f969eadc35c336f5a8500691238dcd13cd96ea9940316d765c064af5 height=14 version=0x20000000 log2_work=4.9068906 tx=15 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(14txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=642f5c622688324a679a7a6bfa4d93a70d47da1463777b58dda441d9115c85f9 height=15 version=0x20000000 log2_work=5 tx=16 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(15txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 168 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=05dc8de66cc3db364515b38666e8ed2e3ac5213c8c3b7cb60de44e62a0083604 height=16 version=0x20000000 log2_work=5.0874628 tx=17 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(16txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=3b778135514c59dcae7830bb4f494138b2b75477bdf2c7b02fce96397c216707 height=17 version=0x20000000 log2_work=5.169925 tx=18 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(17txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=35dc0a2d099764702e73f34e9f6737d9ce8cbc4ebf5fa21fd3650f0ab47ef4e3 height=18 version=0x20000000 log2_work=5.2479275 tx=19 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(18txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z [default wallet] AddToWallet cfd3c3b314f8cfd41c319dfc04dfa7654c72e9f15878c3732eef6554de3a33a3  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 775aac8d15926263f3fdec9c449bbc50eadd519c8427d126c40087286d7385d5  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet a36676cf82cfd1dd362347999f061f8cca27c2407a9baac4b10170f3439b0872  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 401b387e2b133d1b9a58fa6f4d2cdbe023496aab7a8316928122d45d64d1e086  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 1861ccfc0097ef990974894d2925afcfb6373d10e87380dd9ecdc11687dd47da  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 48aabb4c1e7c527bd05c706cd36b297817f4636089624c5ca0018e9658485ca9  new
+2026-07-31T17:00:22Z UpdateTip: new best=2fd66c2f84d1560f70c6fc90e1fecd1862dcbb957cf87dfc01a310e53e7e7155 height=19 version=0x20000000 log2_work=5.3219281 tx=20 date='2026-07-31T17:00:25Z' progress=1.000000 cache=0.0MiB(19txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=3340e7907e764d227159643f43ad27140d6431f9bbd824d215cd8428f0b4a7d5 height=20 version=0x20000000 log2_work=5.3923174 tx=21 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(20txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=20c53aaa1de322d7c642041c4dc158766b46319667abc749040e9637d48c51ee height=21 version=0x20000000 log2_work=5.4594316 tx=22 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(21txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=25230a2e6fd76487f052461063a5c151b1538d3675eb1936c1ed30342abf5b94 height=22 version=0x20000000 log2_work=5.523562 tx=23 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(22txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=5eb7b7b51b5fb138cd2eed357acc04b82317d40188c2ce9f5a6d416944505283 height=23 version=0x20000000 log2_work=5.5849625 tx=24 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(23txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=235b872bfd08553f804707c07b6044bdd43fb52be629094f10feeb3c8b01ce07 height=24 version=0x20000000 log2_work=5.6438562 tx=25 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(24txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z [default wallet] AddToWallet e984be3d712eac7344b3b2ad9b3c984258a26c8b00e61b321d745ff3111ebcfa  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 2e40633ec7b49e16adf62ccd1280d8f95de3502172ad1a5d8d0115414135db40  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 35a48df1d590288ebb3528b97423e70c1864d94fdaba2e2cf451e200b86b789f  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 137efe22746b798707f8b5d75bd7b30e98878fc1e5005bc87db6a2a1e5f2e3c0  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 6321d4b7045bbdb9b441187ea82718dcfd604880e9fca9872241a0a75c85a50e  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet 64dfd353f748c9d7806951e5816311c78301f572702c777bb5d8760ccc2e1113  new
+2026-07-31T17:00:22Z UpdateTip: new best=43ff7f9621c4b78ef99b84807125b2b9a814330a6b4fa9a484d2478533998cac height=25 version=0x20000000 log2_work=5.7004397 tx=26 date='2026-07-31T17:00:26Z' progress=1.000000 cache=0.0MiB(25txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=3095b8b8cf58e710a52dfbe4dd5b6a65f2e813347d6b99b9ead2eed5bcdd1893 height=26 version=0x20000000 log2_work=5.7548875 tx=27 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(26txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=13a1172689e08736e3dfe79ac8e0ac7b3b916f837f40872e2f143b83c3127ad5 height=27 version=0x20000000 log2_work=5.8073549 tx=28 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(27txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=638f3a0b04fdee0bcbfddc7c9c4e0bc9c9bf7d857c9143c1169d4af3a1dbaa04 height=28 version=0x20000000 log2_work=5.857981 tx=29 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(28txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=44c18a2449aba07b49cca38ae2fa16c578f86219861a873217ff7c0739b25804 height=29 version=0x20000000 log2_work=5.9068906 tx=30 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(29txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z UpdateTip: new best=013ff5790b7530f69d56b3736475956d562f2359c6ce711cabf0a4d1a8f83f25 height=30 version=0x20000000 log2_work=5.9541963 tx=31 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(30txo)
+2026-07-31T17:00:22Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:22Z [default wallet] AddToWallet 75b6f3a212e7d659242b3f96c6cba795cd3b0e79a0cf05eb1da8dbc377981525  new
+2026-07-31T17:00:22Z [default wallet] AddToWallet f9c0a2f569ec4dd55243981e06ca5cabd140ece9d79b5799aa4db227dcad69bb  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet a5a216a66e32f3160f24a7d46f92dcfab3ccf3806aff65f7c83bec5ff0ae5c1d  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 4b7cf11214027eeb00184b4fa9e390a6f0559330e646505728583221fb72580c  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 199a3e3326e08a9eac9bb832c918ab8a7b966683cc67f721d31218c2808c3245  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 4308ce3d6519342d85874d96bfa43db721647bdb70fbec39891b18670b71052b  new
+2026-07-31T17:00:23Z UpdateTip: new best=035f6aca07362f0ea807dda232ab17fd3e1dd5300df496b84c000e3a4a28ad5c height=31 version=0x20000000 log2_work=6 tx=32 date='2026-07-31T17:00:27Z' progress=1.000000 cache=0.0MiB(31txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=1802f98f9ea70584f0a1e57224924614c0f3ce7cf389104d950f0a13e4af7c90 height=32 version=0x20000000 log2_work=6.0443941 tx=33 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(32txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=0eb0b4e6207f084598b932373fe9ba7d757fbd1224bd0611c27515b17f874478 height=33 version=0x20000000 log2_work=6.0874628 tx=34 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(33txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=36f49dcb60e0d1c29db52f68b2006c5251959cebb88ff855ea69bacefc1ac88d height=34 version=0x20000000 log2_work=6.129283 tx=35 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(34txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=2a4f1829a7bfa69245b85717ce99114a21b1bd38dd845643fb23b6f5a2a421e4 height=35 version=0x20000000 log2_work=6.169925 tx=36 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(35txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=3729e8932ca987f2b13823930837e37cca3b08ecdbfe9803a62bc1193415d6c3 height=36 version=0x20000000 log2_work=6.2094534 tx=37 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(36txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet 7e734dd6538ba61db05023b06cb00327f8012a36d47d02355197b58cbcd60082  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 2083545cfee0989334dcc31ee41cfde70fb6ccf133345087ce1728c3f9e657c7  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 15e102843a46373b71e6b9dc9dffe11358dbf2315054596af0a4dd76b41a4446  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet b8a2739436072dfb965e2de78576af75f6aabd3c18b4a995ec8a0c30ebbb4be4  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 047650256faef25be13adc21e595d9166b656fc57c8aeb2ca7b20821c493fb1e  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 7fd03088d5a2d9b6e83e5b89b49ecec8fa1d1890d6afdf642a793731a10328fa  new
+2026-07-31T17:00:23Z UpdateTip: new best=544079d81ca2c30005a036ff7088a66b6fd7d2823d257711dd6cd05940bf55ac height=37 version=0x20000000 log2_work=6.2479275 tx=38 date='2026-07-31T17:00:28Z' progress=1.000000 cache=0.0MiB(37txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=40d964bd052c92b3a13b2c6f5fe4f407dd67844cdb875c3088f91bbc43daaa1d height=38 version=0x20000000 log2_work=6.2854022 tx=39 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(38txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=556e14c0d116887d01adc6f93a122e914cc15ab08eb1805a993ae013bcc96a64 height=39 version=0x20000000 log2_work=6.3219281 tx=40 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(39txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=007bcc14c8cf1ba6d82aafedcc7ba9ef1e8f128f7c8ad145bd8553c476b56828 height=40 version=0x20000000 log2_work=6.357552 tx=41 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(40txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=4241f85ee442fcd8fe8d38e47acc71885d999f52f361d4770a6565f730466d12 height=41 version=0x20000000 log2_work=6.3923174 tx=42 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(41txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=29bf3b257efda902895ce77331045ad155c0b5e7c8c2c60e1db4b6f19f531e4f height=42 version=0x20000000 log2_work=6.4262648 tx=43 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(42txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet 5a7f14fbd142699f78f1a720d8818c2ce3f9a9c0b6b23282c19a3ca9ac0794ed  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 6446addafb1926489583f1a584ff9d8f088c7cf1a96b6e8f12a496f58874e490  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 93f49ce506a59a61ef920f62fcacd99ed1415931f9b5ed9af434f3683c3f7edd  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 792614f689315c3c00a8cbbb65d3e464d2781c791b7485ddcb1c7d023df141f9  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 893bba8515a48bbd69bb7852e73b5b763f1b505b8b239fd4938e6ad9791b8d49  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet b44cded0eb50c562966ca667d06f38c5cd5853769c0b15002857dc08db41f4c9  new
+2026-07-31T17:00:23Z UpdateTip: new best=6c46622f20983366e81054f7380249d798928d238fea39b51cdc508c62989e60 height=43 version=0x20000000 log2_work=6.4594316 tx=44 date='2026-07-31T17:00:29Z' progress=1.000000 cache=0.0MiB(43txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=32fa59dc319f45a9f9c009e93319dc6be1949c89b01436246e7a5da101e2bab8 height=44 version=0x20000000 log2_work=6.4918531 tx=45 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(44txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=1667f59c0c3519aae5b4662f038c4f24a849a52fbdf28628f2d6d5ee417a61fc height=45 version=0x20000000 log2_work=6.523562 tx=46 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(45txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=67cd547d11d597c00540bd66084349674373a3a72d139450975dc729ac452b91 height=46 version=0x20000000 log2_work=6.5545889 tx=47 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(46txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=7adca51c3bf05ba03c41da55f39297dd45d87f1251efa51151c72e6e1281410a height=47 version=0x20000000 log2_work=6.5849625 tx=48 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(47txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=08542334e5ae10beb2b77918a2b8378c39a1b823767210be45baf9accc2d69c2 height=48 version=0x20000000 log2_work=6.6147098 tx=49 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(48txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet 58f9f9efee49a9976967852c5a363377e498310bd2de385ee555b8f07c98430e  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 84bf3be756c4d208e19c6bf08215d24d224cee6314003d0425c5f86c70195e05  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 84b6648f1fdc1e2a37325bfea3bb8a1cb2a4fe359f4c9b380b0d8f3bb9013c96  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet a035370f9b34f1092d99278c99597bacdc9e2c5f2e4612c72f26134668feac4d  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 48e5c66d59ac41035f486c39efaf1c451b989fb4a78218a64f30d4048444810c  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 9eafeaa7eca93fdef316b8de6820ba7d22df2749e20236b61d744c909dd3a5a9  new
+2026-07-31T17:00:23Z UpdateTip: new best=331c8f594e65650250b055fd10d2c12d218c871262b3ecc70a86b143f24c0bd8 height=49 version=0x20000000 log2_work=6.6438562 tx=50 date='2026-07-31T17:00:30Z' progress=1.000000 cache=0.0MiB(49txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=37199c178060e47c1b3b96d63903759c1095d498b31d2896995e3e53ca65e020 height=50 version=0x20000000 log2_work=6.6724253 tx=51 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(50txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=01ec3bda7d9a496fbde3c467d50c4464f3fde847aca41481defac00970be17b6 height=51 version=0x20000000 log2_work=6.7004397 tx=52 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(51txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=73ca82a96e2417cbe18e5def18d63064fb0969da7dffef8a69339cd66ae73831 height=52 version=0x20000000 log2_work=6.7279205 tx=53 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(52txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=6c733b3eecd01c6d6766756441601028c4bb6ecdd78b4d78688042ffc4858d9b height=53 version=0x20000000 log2_work=6.7548875 tx=54 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(53txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=4809ec31c73d0fe1c47b7fc5bc6f5a2360becce6d983a1decdfa5176a5ba0f10 height=54 version=0x20000000 log2_work=6.7813597 tx=55 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(54txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet f9420822082040c538d813c6155a7ffcaa4a2e74a75395112079e3408fcbae22  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 13c1e11c603314573510fd6d20d8aaba6e4ff4763b29a1dfdf2fa84195137656  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 3558aae0e10e774fe23b77281fda8f61233d723f9008ceff8ccee9f043a3a0c1  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 2cdeb52d1b1905405d64c63b2d68250c43a3db7645861d8e982ecdae6971bce0  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 3b58263b2682386589b010852a62c2e67942393fa8d6115f16b1ce20ae4ef770  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 4180c2c28a7223dde6c49f5f196f5b31f16bcec000bafec9ad0223094f716ca0  new
+2026-07-31T17:00:23Z UpdateTip: new best=75b8eb78c43757f95c21c220cb171cfd39b1c06b5bf22614acc3bbd7a490c583 height=55 version=0x20000000 log2_work=6.8073549 tx=56 date='2026-07-31T17:00:31Z' progress=1.000000 cache=0.0MiB(55txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=44fe160cc8a871fb5df7f06f42cd898100bea3c41211a9e10b8b3a81882daba4 height=56 version=0x20000000 log2_work=6.83289 tx=57 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(56txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=2990d10d513597c72568a5910460747f1e3aa2e9eda5da2e5b6a7e9eb183c14f height=57 version=0x20000000 log2_work=6.857981 tx=58 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(57txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=395006511a4a5b22fe9e9c8c8dd5859b636b80c05b1e45380dacafeba1c7c538 height=58 version=0x20000000 log2_work=6.882643 tx=59 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(58txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=0fab92fb5c69fde32cc0cf77cd9595038c3d58c4ec3bff8a2bae860c56d3a19d height=59 version=0x20000000 log2_work=6.9068906 tx=60 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(59txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=2872b412fd307805ad15efff47235fc834e6ae8a8e17962ca72de53e0aff02cc height=60 version=0x20000000 log2_work=6.9307373 tx=61 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(60txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet cc5f4f09caf7c1271d686dd07c97ea63fb9e6fae5d18235a3e3c76af0431d624  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet a1a8efb5837d1b0eab65253395ecfccd247b8e044e73b547a9216bfa55bc223a  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 7760232e5f443dd0df6bc81a3320c1896117568bc9bb11c6fd9f92e82192218f  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet e2f9cea019772606844e03193d6e4fafaec459d1b79d268f291ee5f167943846  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 3eb8384f15b4e0ab80f54f768c5fcf4199029beb5a446e4aceef1563f92f4270  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 3ac485bf899ba00abf66cdbaed847ddb67932d53bddd4cf9edf4fea979dec0a9  new
+2026-07-31T17:00:23Z UpdateTip: new best=74de29269cbac5d48ed2f48797460bcbe88843534586b9b6cd29d8c50e46014c height=61 version=0x20000000 log2_work=6.9541963 tx=62 date='2026-07-31T17:00:32Z' progress=1.000000 cache=0.0MiB(61txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=62f3074e3f1e879202ccd0830ac5dd87e29d334b2930a04b5cb135eb16af3c7d height=62 version=0x20000000 log2_work=6.9772799 tx=63 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(62txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=573d99f47de48169a880fc65789b8d78a480a293f26963bd0a87061247093b83 height=63 version=0x20000000 log2_work=7 tx=64 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(63txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=34ccdd2db09604c6ff4c25c71b1115babeb28cf2d93d8191ea045ed636e5a219 height=64 version=0x20000000 log2_work=7.0223678 tx=65 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(64txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=26e609d1491d920a9c52abc5f97eb52db4bf499ceb86d829a0e967b47807d64e height=65 version=0x20000000 log2_work=7.0443941 tx=66 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(65txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z UpdateTip: new best=0d0a29c7bfd6b23303ebeb1890692fca46972cbae5b62fb1b396ba16d4be1a5a height=66 version=0x20000000 log2_work=7.0660892 tx=67 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(66txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:23Z [default wallet] AddToWallet 91d086d63ca594713b79f54ab6684bdeae6d3be921c83b044b6e7c06990c30fa  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet a51170068746d8907100f57969f43479015fb5f0e7a36c139e09d1caa360c3ed  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet a48d91da2aee55dddc9f4eda50f37ac393dfb1eb76ad9bde1a042f81a060a5a3  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 6922e706fd36547c26595a710c868d139cd69670564eea9283b9058181b6a385  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 893acd25cdf117447f87457283fbd1666e54630b9611ae74c2e52a9e91e24fd2  new
+2026-07-31T17:00:23Z [default wallet] AddToWallet 6c051339771137d4bcc90108f80124f3ffb2f396cb0c87eb01b5c5916b82d55f  new
+2026-07-31T17:00:23Z UpdateTip: new best=6a288e8cac48a43eb7defa180f7c726433ccddddaf8ed9f29c28361568ca7f52 height=67 version=0x20000000 log2_work=7.0874628 tx=68 date='2026-07-31T17:00:33Z' progress=1.000000 cache=0.0MiB(67txo)
+2026-07-31T17:00:23Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=133b9594cb4514f73e606fd404cd998ad9b75e8d9e7fec5051ded549150ca80c height=68 version=0x20000000 log2_work=7.1085245 tx=69 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(68txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=29b9f7b14cf23f900bb86e33cc58875a2a73f0f1b9b5a32c539c9772b1ff919b height=69 version=0x20000000 log2_work=7.129283 tx=70 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(69txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=1e99839cfe9b8d453919e054b2ce7fdb9841a1d4babf18e8165f6f30acd6092e height=70 version=0x20000000 log2_work=7.1497471 tx=71 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(70txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=7e9de52f3a715611f4ef8eb4f166b3d34403805634c8325da69447808919d556 height=71 version=0x20000000 log2_work=7.169925 tx=72 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(71txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=795d8a1e0a977f34db048b2f5b5ea90573afa8c80d037a1676837c2bca972685 height=72 version=0x20000000 log2_work=7.1898246 tx=73 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(72txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z [default wallet] AddToWallet 572fc37ea2439a593125cb4a0efcf352d08ca9d60cc142897f5e0dfb6a092515  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet f9329a957b50693f8e3bc16f227fc9084267f844f534bb7ee29839fee0c66e17  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 5d0edcca22171e2712077553f12a62f2ce90dced5f3868d3333d0ba8f93c01ed  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 70620dc1d125c68e91602160564bd517bf27abfcc39c06ea81bf644436824bc1  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet e3805352823bd4123b511b21958a6046e63216ba1c2cb8008f14507f105fe503  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet e368419ce80fbf66cb6b1dc809328b26ee1b86e8c9fd05d6e36f18a566b80705  new
+2026-07-31T17:00:24Z UpdateTip: new best=1d9fcf770e95313cc2ff7e8271b3f681441f93669a541f64fd702677a85bd1f8 height=73 version=0x20000000 log2_work=7.2094534 tx=74 date='2026-07-31T17:00:34Z' progress=1.000000 cache=0.0MiB(73txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=7ee295c85ed2d9fbd265200feba3d5549b592dd0fec7dbabccc439ef42572cc3 height=74 version=0x20000000 log2_work=7.2288187 tx=75 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(74txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=0289f23a2d081bf03e4ae99f075764f170bae4f42dcf8bb6daa6543c06defe82 height=75 version=0x20000000 log2_work=7.2479275 tx=76 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(75txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=5883d264b9fc324491045073c78a41b70030f01be6bb07a8f02defd906ca6bee height=76 version=0x20000000 log2_work=7.2667865 tx=77 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(76txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=2a59682ef60cae214453062a2c768ea51a9a546481e8686354954c3438813003 height=77 version=0x20000000 log2_work=7.2854022 tx=78 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(77txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=741322c3c104a9b66a2e224e939a986045fda9dfd8f5e9baae884746f51bb3ae height=78 version=0x20000000 log2_work=7.3037807 tx=79 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(78txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z [default wallet] AddToWallet 2aa86cc72c392f95400f668bf0bd42f5e0d5e84ab3ecebdac5dae7392daff92e  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 33581e8d02ccadbcba29ac8749c9eb10548d4753e10afd7005aa194bd4f3acea  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 524644a3cd5e8ae51362c5140caa5b59e7350ce2a16c85a41be0a86d25db407b  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 9c1658c436b8f79ebd3c854f3e601b687ac3eee795242073e2babad65e7fce27  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 4bf327c4d95ea553fad90c4d8e30f1d9f8c0bd8017accb870bed64d49149a225  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 2d3b2aefff3d30e1e838452931adce85824819bf7548cf5f0409438e899c427f  new
+2026-07-31T17:00:24Z UpdateTip: new best=110b3ed1241d743ebf76037a5c16ef2057c5b5ea7317df1079f52f9473c1c09b height=79 version=0x20000000 log2_work=7.3219281 tx=80 date='2026-07-31T17:00:35Z' progress=1.000000 cache=0.0MiB(79txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=526d9f40f0127b62a7ae419518ce73c60e241625597e81833dd71e904cf06c08 height=80 version=0x20000000 log2_work=7.33985 tx=81 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(80txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=3e379f39c0d7ab6664b012be458cb1df5dc84986f72d764fbbd9ff18f32d1779 height=81 version=0x20000000 log2_work=7.357552 tx=82 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(81txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=1790f3bc3bba1c0540bf76c40b075f06f1dee76641e658e35ba9d9d167b44d72 height=82 version=0x20000000 log2_work=7.3750394 tx=83 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(82txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=55e1eaa710e2582685a42467f07944c59acc1b97239a1d3ec6321a686d0f4518 height=83 version=0x20000000 log2_work=7.3923174 tx=84 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(83txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=0c215146eca561228563d161ec8c006857528e5988035df3e0c94c9cc982ba72 height=84 version=0x20000000 log2_work=7.4093909 tx=85 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(84txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z [default wallet] AddToWallet b5074a2d03e331ef742a93375d31c5c95d7c1075bd56f1153679792fc3696bb9  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet adbd28f7f6cda9c1746a16b36129e673f71d7a40e7ceb6dccc356b6efcf3a41c  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 15a596b6261110403aac9a63d98fd91b5403e059195f5e18be5d5bc3b2acf683  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet a1d7432ce654c834b91a75714b35d06f46689dc1288d42c8d08f639ef1381672  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet bf074199537d4e1258f7bc354b9d7201f2bc32c37d3a35675a54cc580e98d68b  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 6809623fb978277087b62c1b6d81b6b7127379325689cb8cb8e265516e907352  new
+2026-07-31T17:00:24Z UpdateTip: new best=3b0d865b0c89c672958ae572a6631263ed613be151f14fde5bb24ad0f4d38a10 height=85 version=0x20000000 log2_work=7.4262648 tx=86 date='2026-07-31T17:00:36Z' progress=1.000000 cache=0.0MiB(85txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=6c6b2e63a5b8cd1a57630406d802e00e8c454a2adf3eea0fc1e8d514f9ae3b94 height=86 version=0x20000000 log2_work=7.4429435 tx=87 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(86txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=5dc2c3b7d3da07368a48bd5bf997d63ef123bbc57fa0e7e1519c0df8520a801d height=87 version=0x20000000 log2_work=7.4594316 tx=88 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(87txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=466b8c259f363c08c7958e2b5c56bf90799995cf3d37e5a4fd1eb2e59532b709 height=88 version=0x20000000 log2_work=7.4757334 tx=89 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(88txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=2bc3ff5975640ed4c93fbed59e343d53287964cf52b60d0141a33b60e18a2813 height=89 version=0x20000000 log2_work=7.4918531 tx=90 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(89txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z UpdateTip: new best=640116035c4001d530db0c1d64db853de46c874a610623500ad05268cb55bc05 height=90 version=0x20000000 log2_work=7.5077946 tx=91 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(90txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:24Z [default wallet] AddToWallet f00a54e6bee5ce28a405e542f8c8a8a982fb0da380e082e05fff59d1902363c8  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 6a0c25c8c9c5732624ea3211aeb7f33f9b42c8b13395e9a23556a4cabca05148  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 85872653dea0ecf17821de7a548c03355f8b702cf8a32d5d904b7a3705ec3e68  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 7a0f6b9fa845bae0e4de9e21f1253ea3ae3e624d3cbda669823712e3230dee21  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 1127c56da3deef0c7e8f194c77be138c9dd08cff12ea84bf7d9de1c0291840a1  new
+2026-07-31T17:00:24Z [default wallet] AddToWallet 324fb4eb14b2fc6ccadcc5f430555d92bc6a8f6474c2cb4fef54f3c1ccd8b001  new
+2026-07-31T17:00:24Z UpdateTip: new best=0917245dc2c4426001c8b62dd2738c63c158dfee5a5a479f910be806e407f64b height=91 version=0x20000000 log2_work=7.523562 tx=92 date='2026-07-31T17:00:37Z' progress=1.000000 cache=0.0MiB(91txo)
+2026-07-31T17:00:24Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=1d79772d7ae8f7045e69ea91ac9284d4b861401bab7c87e889819bb41cee5dff height=92 version=0x20000000 log2_work=7.5391588 tx=93 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(92txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=353cb69748cae0b36e5dfd8edfff532d6b09574292f02f08a64f4d3cec0c6bbf height=93 version=0x20000000 log2_work=7.5545889 tx=94 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(93txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=6c575866a0f371db32829f86a28084417e72784a3f0149a57433bf1e2b5e1333 height=94 version=0x20000000 log2_work=7.5698556 tx=95 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(94txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=394cbb8d000ac69efe8757977bdbe2b45a139286e2af97aac6a4f79fee7c4431 height=95 version=0x20000000 log2_work=7.5849625 tx=96 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(95txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=308ef3bfe655d4542f3edc00db77be5f33d4f9bb126eee8c9d0634e1be27a66a height=96 version=0x20000000 log2_work=7.5999128 tx=97 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(96txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z [default wallet] AddToWallet 6298d26fba26cc5a2ff1a435646daf93044ddf676c94807a15a3be98efffba26  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 9c91c97a4452a057aeb188de6e1bdf9da504b3af79bce77b138c97d691864203  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 63f6926560606ff5234f73cf90c9e4740bc4e44a9881a78058190a9d0cfb8cb7  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet a6a276410bb851bbffe95ba67422c64d7063ecaefdce0743d00a9c0686fb25e5  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 22cadcfb52f8863a15312f9ddfe66bd86903f3a604d04f134e689b501bb9ac7c  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 3b22274253b28518e0417bf959d18a6c3c66e18c0dc18853699a61f7f80c860d  new
+2026-07-31T17:00:25Z UpdateTip: new best=09febdb668833a694836f4c646c2bfb390a28e9e23ba2784b58ad0dac231c6d3 height=97 version=0x20000000 log2_work=7.6147098 tx=98 date='2026-07-31T17:00:38Z' progress=1.000000 cache=0.0MiB(97txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=06d6fadd3967a2589e16b46e79583a949b83c6853367cf48b503d7cd1a5b60dd height=98 version=0x20000000 log2_work=7.6293566 tx=99 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(98txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=611c6c93afd2903cd184f11f98e80dd1ef5d7345bd9036535f409c27050ce319 height=99 version=0x20000000 log2_work=7.6438562 tx=100 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(99txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=572b8ca2cebaffbc68d71af7f051c33e44cf3e3e5079ad4c661cee93a3809431 height=100 version=0x20000000 log2_work=7.6582115 tx=101 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(100txo)
+2026-07-31T17:00:25Z CreateNewBlock(): total size: 169 txs: 0 fees: 0 sigchecks 100
+2026-07-31T17:00:25Z UpdateTip: new best=3ad7211599cd3c8419df978e0c63e64d55f09c0e723674aca62885a474123602 height=101 version=0x20000000 log2_work=7.6724253 tx=102 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(101txo)
+2026-07-31T17:00:25Z [default wallet] AddToWallet 5d40d66716affffb5a5eea66c6d2a57e64d30ea26517a3f1778aef49a7c7a647  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 709ecf264b7aa4dbf59d641fe48d81b9419ba43992ae1146cd21d358c3cd262c  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet 625fb3588ec216520a21978e4e720d7c3680e3688d5fb8f3c64d93ebb0f3eca5  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet a1dbf77fecb459fdd093978cd6a506f1160d54f20afe456fad08ba95366e02bb  new
+2026-07-31T17:00:25Z [default wallet] AddToWallet c0ac6f8efbb1cb2edebbc55706f7e6e10243893bf4b8cff4c58f1466df08ad93  new
+2026-07-31T17:00:26Z [default wallet] keypool added 1 keys (0 internal), size=2000 (1000 internal)
+2026-07-31T17:00:26Z [default wallet] keypool reserve 1001
+2026-07-31T17:00:26Z [default wallet] CommitTransaction:
+CTransaction(txid=bdb51fb1da, ver=2, vin.size=1, vout.size=2, nLockTime=101)
+    CTxIn(COutPoint(a01210c66b, 0), scriptSig=47304402207b7137e26812d7, nSequence=4294967294)
+    CTxOut(nValue=0.01000000, scriptPubKey=aa20d31cb86add815db13fea246f4b)
+    CTxOut(nValue=49.98999765, scriptPubKey=76a914649b3ed57fbc10f625002aa3)
+2026-07-31T17:00:26Z [default wallet] keypool keep 1001
+2026-07-31T17:00:26Z [default wallet] AddToWallet bdb51fb1daf6d7908ad296def5532114636c391280f66a9990b4862eaeeca223  new
+2026-07-31T17:00:26Z [default wallet] Relaying wtx bdb51fb1daf6d7908ad296def5532114636c391280f66a9990b4862eaeeca223
+2026-07-31T17:00:26Z [default wallet] AddToWallet bdb51fb1daf6d7908ad296def5532114636c391280f66a9990b4862eaeeca223  
+2026-07-31T17:00:26Z [default wallet] keypool added 1 keys (1 internal), size=2000 (1000 internal)
+2026-07-31T17:00:26Z [default wallet] keypool reserve 2
+2026-07-31T17:00:26Z [default wallet] keypool keep 2
+2026-07-31T17:00:26Z CreateNewBlock(): total size: 404 txs: 1 fees: 235 sigchecks 101
+2026-07-31T17:00:26Z UpdateTip: new best=5520abc746f0658cfb6e5b1a8803b2effd1accab1beea73d4e146161f427ee6c height=102 version=0x20000000 log2_work=7.6865005 tx=104 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(104txo)
+2026-07-31T17:00:26Z [default wallet] AddToWallet 70728960ed1ce4b230f302fece0e371774e1d4da9628cf3f9a1ad9d4748e09f4  new
+2026-07-31T17:00:26Z [default wallet] AddToWallet bdb51fb1daf6d7908ad296def5532114636c391280f66a9990b4862eaeeca223  update
+2026-07-31T17:00:27Z [default wallet] keypool added 1 keys (0 internal), size=2000 (1000 internal)
+2026-07-31T17:00:27Z [default wallet] keypool reserve 3
+2026-07-31T17:00:27Z [default wallet] keypool keep 3
+2026-07-31T17:00:27Z CreateNewBlock(): total size: 617 txs: 1 fees: 1000 sigchecks 102
+2026-07-31T17:00:27Z UpdateTip: new best=2f2fc91522c52c68d095686f91264961d6bbd2e3ce2e83ed949a167ea3e9d1a2 height=103 version=0x20000000 log2_work=7.7004397 tx=106 date='2026-07-31T17:00:39Z' progress=1.000000 cache=0.0MiB(3txo)
+2026-07-31T17:00:27Z [default wallet] AddToWallet cb84be3cc5a82c20acf537f6304a1f6e5446e560b7583a7f7ec2cc785b0806b2  new
+2026-07-31T17:01:21Z Adding fixed seed nodes as DNS doesn't seem to be available.
